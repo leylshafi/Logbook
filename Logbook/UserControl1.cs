@@ -80,5 +80,45 @@ namespace Logbook
                 }
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if(sender is Button b)
+                panel6.Controls.Remove(b);
+            RichTextBox textBox = new RichTextBox()
+            {
+                Location = new Point(8, 10),
+                Size = new Size(250,70)
+            };
+
+            Button btn1 = new Button()
+            { 
+                Location= new Point(8,80),
+                Size = new Size(50,50),
+                BackgroundImage= Resources.icons8_save_100,
+                BackgroundImageLayout = ImageLayout.Zoom
+            };
+
+            panel6.Controls.Add(textBox);
+            panel6.Controls.Add(btn1);
+
+            btn1.Click += (object? sender, EventArgs e) =>
+            {
+                Label lbl = new Label()
+                {
+                    Location = new Point(8, 40),
+                    Text = textBox.Text,
+                };
+
+                panel6.Controls.Add(lbl);
+                panel6.Controls.Remove(textBox);
+                panel6.Controls.Remove(btn1);
+
+            };
+
+          
+
+        }
+
     }
 }

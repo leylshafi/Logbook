@@ -73,9 +73,39 @@ namespace Logbook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cancel_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_diamond_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8_diamond_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_message_67 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_message_67", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_save_100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

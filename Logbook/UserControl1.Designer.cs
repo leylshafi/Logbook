@@ -48,12 +48,15 @@
             this.Id = new System.Windows.Forms.Label();
             this.FullName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel8
@@ -283,6 +286,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel4);
@@ -294,6 +298,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1446, 112);
             this.panel1.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button5);
+            this.panel6.Location = new System.Drawing.Point(950, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.TabIndex = 6;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::Logbook.Properties.Resources.icons8_message_67;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Location = new System.Drawing.Point(13, 36);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(35, 31);
+            this.button5.TabIndex = 0;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // UserControl1
             // 
@@ -311,6 +336,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -340,5 +366,7 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Panel panel6;
+        private Button button5;
     }
 }

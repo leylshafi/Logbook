@@ -1,7 +1,7 @@
 ﻿using Guna.UI2.WinForms;
 
 namespace Logbook;
-// Shekilleri elave et,  komentleri duzelt
+// Shekilleri elave et,Add Material i duzelt
 
 public partial class Form1 : Form
 {
