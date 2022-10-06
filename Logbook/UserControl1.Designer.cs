@@ -62,7 +62,7 @@
             this.panel8.Controls.Add(this.button3);
             this.panel8.Controls.Add(this.button2);
             this.panel8.Controls.Add(this.button1);
-            this.panel8.Location = new System.Drawing.Point(850, 3);
+            this.panel8.Location = new System.Drawing.Point(765, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(179, 100);
             this.panel8.TabIndex = 5;
@@ -134,10 +134,11 @@
             this.Absent.BackColor = System.Drawing.Color.Transparent;
             this.Absent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Absent.Enabled = false;
+            this.Absent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Absent.ForeColor = System.Drawing.Color.Red;
             this.Absent.Location = new System.Drawing.Point(141, 42);
             this.Absent.Name = "Absent";
-            this.Absent.Size = new System.Drawing.Size(14, 13);
+            this.Absent.Size = new System.Drawing.Size(13, 12);
             this.Absent.TabIndex = 0;
             this.Absent.TabStop = true;
             this.Absent.UseVisualStyleBackColor = false;
@@ -148,10 +149,11 @@
             this.Late.BackColor = System.Drawing.Color.Transparent;
             this.Late.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Late.Enabled = false;
+            this.Late.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Late.ForeColor = System.Drawing.Color.Yellow;
             this.Late.Location = new System.Drawing.Point(94, 42);
             this.Late.Name = "Late";
-            this.Late.Size = new System.Drawing.Size(14, 13);
+            this.Late.Size = new System.Drawing.Size(13, 12);
             this.Late.TabIndex = 0;
             this.Late.TabStop = true;
             this.Late.UseVisualStyleBackColor = false;
@@ -162,10 +164,11 @@
             this.Present.BackColor = System.Drawing.Color.Transparent;
             this.Present.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Present.Enabled = false;
+            this.Present.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Present.ForeColor = System.Drawing.Color.Green;
             this.Present.Location = new System.Drawing.Point(48, 42);
             this.Present.Name = "Present";
-            this.Present.Size = new System.Drawing.Size(14, 13);
+            this.Present.Size = new System.Drawing.Size(13, 12);
             this.Present.TabIndex = 0;
             this.Present.TabStop = true;
             this.Present.UseVisualStyleBackColor = false;
@@ -173,9 +176,9 @@
             // panel7
             // 
             this.panel7.Controls.Add(this.comboBox2);
-            this.panel7.Location = new System.Drawing.Point(687, 3);
+            this.panel7.Location = new System.Drawing.Point(654, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(157, 100);
+            this.panel7.Size = new System.Drawing.Size(88, 100);
             this.panel7.TabIndex = 4;
             // 
             // comboBox2
@@ -196,7 +199,7 @@
             "10",
             "11",
             "12"});
-            this.comboBox2.Location = new System.Drawing.Point(18, 38);
+            this.comboBox2.Location = new System.Drawing.Point(3, 38);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(59, 23);
             this.comboBox2.TabIndex = 0;
@@ -207,7 +210,7 @@
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Location = new System.Drawing.Point(553, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(128, 100);
+            this.panel4.Size = new System.Drawing.Size(95, 100);
             this.panel4.TabIndex = 2;
             // 
             // comboBox1
@@ -228,7 +231,7 @@
             "10",
             "11",
             "12"});
-            this.comboBox1.Location = new System.Drawing.Point(43, 37);
+            this.comboBox1.Location = new System.Drawing.Point(15, 38);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(59, 23);
             this.comboBox1.TabIndex = 4;
