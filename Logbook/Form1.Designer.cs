@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -43,7 +43,7 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.TotalChristal = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,6 +51,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.pnl_students = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,52 +69,34 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2RadioButton2);
-            this.panel1.Controls.Add(this.guna2RadioButton1);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Location = new System.Drawing.Point(27, 89);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(345, 35);
             this.panel1.TabIndex = 1;
             // 
-            // guna2RadioButton2
+            // radioButton2
             // 
-            this.guna2RadioButton2.Animated = true;
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(12, 3);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(137, 24);
-            this.guna2RadioButton2.TabIndex = 0;
-            this.guna2RadioButton2.Text = "Regular Teacher";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.CheckedChanged += new System.EventHandler(this.guna2RadioButton2_CheckedChanged);
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(175, 5);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(156, 24);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "Subsititute Teacher";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
-            // guna2RadioButton1
+            // radioButton1
             // 
-            this.guna2RadioButton1.Animated = true;
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(180, 3);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(152, 24);
-            this.guna2RadioButton1.TabIndex = 0;
-            this.guna2RadioButton1.Text = "Substitute Teacher";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.CheckedChanged += new System.EventHandler(this.guna2RadioButton2_CheckedChanged);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(3, 3);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(137, 24);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.Text = "Regular Teacher";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // label2
             // 
@@ -172,7 +155,7 @@
             this.guna2GradientPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.guna2GradientPanel1.Controls.Add(this.guna2CustomRadioButton1);
             this.guna2GradientPanel1.Controls.Add(this.panel3);
-            this.guna2GradientPanel1.Controls.Add(this.label9);
+            this.guna2GradientPanel1.Controls.Add(this.TotalChristal);
             this.guna2GradientPanel1.Controls.Add(this.label10);
             this.guna2GradientPanel1.Controls.Add(this.label8);
             this.guna2GradientPanel1.Controls.Add(this.label7);
@@ -200,6 +183,7 @@
             this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
             this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton1.CheckedChanged += new System.EventHandler(this.guna2CustomRadioButton1_CheckedChanged);
             // 
             // panel3
             // 
@@ -210,15 +194,15 @@
             this.panel3.Size = new System.Drawing.Size(27, 20);
             this.panel3.TabIndex = 1;
             // 
-            // label9
+            // TotalChristal
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label9.Location = new System.Drawing.Point(1073, 28);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(17, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "5";
+            this.TotalChristal.AutoSize = true;
+            this.TotalChristal.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.TotalChristal.Location = new System.Drawing.Point(1073, 28);
+            this.TotalChristal.Name = "TotalChristal";
+            this.TotalChristal.Size = new System.Drawing.Size(17, 20);
+            this.TotalChristal.TabIndex = 0;
+            this.TotalChristal.Text = "5";
             // 
             // label10
             // 
@@ -290,11 +274,19 @@
             this.guna2Separator1.Size = new System.Drawing.Size(1496, 11);
             this.guna2Separator1.TabIndex = 7;
             // 
+            // pnl_students
+            // 
+            this.pnl_students.Location = new System.Drawing.Point(-4, 262);
+            this.pnl_students.Name = "pnl_students";
+            this.pnl_students.Size = new System.Drawing.Size(1451, 481);
+            this.pnl_students.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1446, 928);
+            this.Controls.Add(this.pnl_students);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.guna2Button1);
@@ -308,6 +300,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
@@ -321,7 +314,6 @@
 
         private Label label1;
         private Panel panel1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
         private Label label2;
         private Panel panel2;
         private ToolTip toolTip1;
@@ -331,7 +323,7 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Panel panel3;
-        private Label label9;
+        private Label TotalChristal;
         private Label label8;
         private Label label7;
         private Label label6;
@@ -339,6 +331,8 @@
         private Label label4;
         private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton1;
         private Label label10;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
+        private Panel pnl_students;
     }
 }
