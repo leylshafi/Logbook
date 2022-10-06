@@ -14,7 +14,7 @@ namespace Logbook
     partial class UserControl1 : UserControl
     {
         public static int ChristalCount { get; set; } = 0;
-
+        List<Student> students = new List<Student>();
         public UserControl1(Student student)
         {
             InitializeComponent();
@@ -29,8 +29,28 @@ namespace Logbook
         {
             Id.Text = student.Number.ToString();
 
-            //if (student.PictureUrl is not null)
-                //picture.Image = Image.FromFile($"../../../Resources/{student.PictureUrl}");
+            if (student.PictureUrl is not null)
+            {
+                switch (student.PictureUrl)
+                {
+                    case "pp1.png":
+                        panel9.BackgroundImage = Resources.pp1;
+                        break;
+                    case "pp2.png":
+                        panel9.BackgroundImage = Resources.pp2;
+                        break;
+                    case "pp3.png":
+                        panel9.BackgroundImage = Resources.pp3;
+                        break;
+                    case "pp4.png":
+                        panel9.BackgroundImage = Resources.pp4;
+                        break;
+                    default:
+                        break;
+                }
+               
+                panel9.BackgroundImageLayout = ImageLayout.Zoom;
+            }
 
 
 

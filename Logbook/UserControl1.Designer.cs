@@ -48,6 +48,7 @@
             this.Id = new System.Windows.Forms.Label();
             this.FullName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
@@ -74,6 +75,7 @@
             // 
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Enabled = false;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.Location = new System.Drawing.Point(121, 38);
             this.button4.Name = "button4";
@@ -87,6 +89,7 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(85, 38);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(30, 29);
@@ -100,6 +103,7 @@
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(13, 38);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(31, 29);
@@ -113,6 +117,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(50, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(31, 29);
@@ -126,9 +131,9 @@
             this.panel3.Controls.Add(this.Absent);
             this.panel3.Controls.Add(this.Late);
             this.panel3.Controls.Add(this.Present);
-            this.panel3.Location = new System.Drawing.Point(356, 3);
+            this.panel3.Location = new System.Drawing.Point(382, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(191, 100);
+            this.panel3.Size = new System.Drawing.Size(165, 100);
             this.panel3.TabIndex = 2;
             // 
             // Absent
@@ -139,7 +144,7 @@
             this.Absent.Enabled = false;
             this.Absent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Absent.ForeColor = System.Drawing.Color.Red;
-            this.Absent.Location = new System.Drawing.Point(141, 42);
+            this.Absent.Location = new System.Drawing.Point(125, 42);
             this.Absent.Name = "Absent";
             this.Absent.Size = new System.Drawing.Size(13, 12);
             this.Absent.TabIndex = 0;
@@ -154,7 +159,7 @@
             this.Late.Enabled = false;
             this.Late.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Late.ForeColor = System.Drawing.Color.Yellow;
-            this.Late.Location = new System.Drawing.Point(94, 42);
+            this.Late.Location = new System.Drawing.Point(78, 42);
             this.Late.Name = "Late";
             this.Late.Size = new System.Drawing.Size(13, 12);
             this.Late.TabIndex = 0;
@@ -169,7 +174,7 @@
             this.Present.Enabled = false;
             this.Present.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Present.ForeColor = System.Drawing.Color.Green;
-            this.Present.Location = new System.Drawing.Point(48, 42);
+            this.Present.Location = new System.Drawing.Point(32, 42);
             this.Present.Name = "Present";
             this.Present.Size = new System.Drawing.Size(13, 12);
             this.Present.TabIndex = 0;
@@ -249,16 +254,16 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.Lastseen);
-            this.panel2.Location = new System.Drawing.Point(238, 3);
+            this.panel2.Location = new System.Drawing.Point(285, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(112, 100);
+            this.panel2.Size = new System.Drawing.Size(91, 100);
             this.panel2.TabIndex = 1;
             // 
             // Lastseen
             // 
             this.Lastseen.AutoSize = true;
             this.Lastseen.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Lastseen.Location = new System.Drawing.Point(17, 42);
+            this.Lastseen.Location = new System.Drawing.Point(11, 39);
             this.Lastseen.Name = "Lastseen";
             this.Lastseen.Size = new System.Drawing.Size(77, 21);
             this.Lastseen.TabIndex = 0;
@@ -268,7 +273,7 @@
             // 
             this.Id.AutoSize = true;
             this.Id.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Id.Location = new System.Drawing.Point(22, 45);
+            this.Id.Location = new System.Drawing.Point(3, 45);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(25, 21);
             this.Id.TabIndex = 0;
@@ -278,7 +283,7 @@
             // 
             this.FullName.AutoSize = true;
             this.FullName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FullName.Location = new System.Drawing.Point(62, 45);
+            this.FullName.Location = new System.Drawing.Point(109, 45);
             this.FullName.Name = "FullName";
             this.FullName.Size = new System.Drawing.Size(170, 21);
             this.FullName.TabIndex = 0;
@@ -286,6 +291,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel8);
@@ -298,6 +304,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1446, 112);
             this.panel1.TabIndex = 6;
+            // 
+            // panel9
+            // 
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel9.Location = new System.Drawing.Point(25, 19);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(78, 74);
+            this.panel9.TabIndex = 7;
             // 
             // panel6
             // 
@@ -312,6 +326,7 @@
             this.button5.BackgroundImage = global::Logbook.Properties.Resources.icons8_message_67;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Enabled = false;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Location = new System.Drawing.Point(13, 36);
             this.button5.Name = "button5";
@@ -368,5 +383,6 @@
         private Button button1;
         private Panel panel6;
         private Button button5;
+        private Panel panel9;
     }
 }

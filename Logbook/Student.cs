@@ -39,6 +39,10 @@ namespace Logbook
 
 
         public string? FullName() => $"{FirstName} {LastName} {FatherName}";
+
+        public override string ToString() => $@"
+No: {Number},
+Full name: {FullName()}";
     }
 
 

@@ -1,7 +1,7 @@
 ﻿using Guna.UI2.WinForms;
+using System.Text;
 
 namespace Logbook;
-// Shekilleri elave et,Add Material i duzelt
 
 public partial class Form1 : Form
 {
@@ -82,6 +82,14 @@ public partial class Form1 : Form
                                     it.Enabled = true;
                             }
                         }
+                        if (item is Control pp && (pp.Name == "panel8" || pp.Name == "panel6"))
+                        {
+                            foreach (var a in pp.Controls)
+                            {
+                                if (a is Button it)
+                                    it.Enabled = true;
+                            }
+                        }
                     }
 
                 }
@@ -135,4 +143,27 @@ public partial class Form1 : Form
 
             }
     }
+
+    private void guna2Button1_Click(object sender, EventArgs e)
+    {
+
+        var jsonString = System.Text.Json.JsonSerializer.Serialize(FakeRepository.Students);
+        File.WriteAllText("students.json", jsonString);
+
+        using FileStream fs = new FileStream("students.json", FileMode.Open);
+        if (fs != null)
+        {
+            List<Student> students = System.Text.Json.JsonSerializer.Deserialize<List<Student>>(fs);
+
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in FakeRepository.Students)
+                sb.Append(item.ToString());
+            MessageBox.Show(sb.ToString());
+        }
+
+
+        
+       
+
     }
+}

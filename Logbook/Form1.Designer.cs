@@ -143,6 +143,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(180, 33);
             this.guna2Button1.TabIndex = 5;
             this.guna2Button1.Text = "Add Material";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2BorderlessForm1
             // 
@@ -174,7 +175,7 @@
             this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2CustomRadioButton1.Enabled = false;
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(552, 33);
+            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(591, 36);
             this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
             this.guna2CustomRadioButton1.Size = new System.Drawing.Size(20, 20);
             this.guna2CustomRadioButton1.TabIndex = 2;
@@ -238,7 +239,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label6.Location = new System.Drawing.Point(506, 10);
+            this.label6.Location = new System.Drawing.Point(545, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 20);
             this.label6.TabIndex = 0;
@@ -248,7 +249,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(265, 28);
+            this.label5.Location = new System.Drawing.Point(368, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 20);
             this.label5.TabIndex = 0;
@@ -258,7 +259,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label4.Location = new System.Drawing.Point(43, 28);
+            this.label4.Location = new System.Drawing.Point(156, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 20);
             this.label4.TabIndex = 0;
@@ -278,7 +279,7 @@
             // 
             this.pnl_students.Location = new System.Drawing.Point(-4, 262);
             this.pnl_students.Name = "pnl_students";
-            this.pnl_students.Size = new System.Drawing.Size(1451, 481);
+            this.pnl_students.Size = new System.Drawing.Size(1451, 619);
             this.pnl_students.TabIndex = 8;
             // 
             // Form1
