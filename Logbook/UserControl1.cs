@@ -64,8 +64,21 @@ namespace Logbook
                 ChristalCount++;
                 (sender as Button).BackgroundImage = Resources.christal;
                 (sender as Button).BackgroundImageLayout = ImageLayout.Zoom;
+                (sender as Button).Tag = "christal";
             }
                 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            foreach (var item in panel8.Controls)
+            {
+                if(item is Button s && s?.Tag=="christal")
+                {
+                    s.BackgroundImage = Resources.icons8_diamond_48;
+                    ChristalCount--;
+                }
+            }
         }
     }
 }
